@@ -9,10 +9,10 @@ import javax.jms.Queue;
 @Configuration
 public class ActiveMQConfig {
  
-    public static final String HELLO_QUEUE = "hello.queue";
+    public static final String ORDER_QUEUE = "order.queue";
  
     @Bean
-    public Queue helloJMSQueue() {
-        return new ActiveMQQueue(HELLO_QUEUE);
+    public Queue orderJMSQueue() {
+        return new ActiveMQQueue(ORDER_QUEUE);
     }
 }
